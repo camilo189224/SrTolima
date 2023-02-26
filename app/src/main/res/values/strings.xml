@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sr Tolima</string>
+
+    <string name="op1">INICIO</string>
+    <string name="op2">PERFIL</string>
+    <string name="op3">IDIOMA</string>
+    <string name="op4">SALIR</string>
+</resources>
