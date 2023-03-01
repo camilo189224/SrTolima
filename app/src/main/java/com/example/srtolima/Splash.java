@@ -1,9 +1,13 @@
 package com.example.srtolima;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Splash extends AppCompatActivity {
 
