@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/fotoBebida2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/aguilalata"
+        />
+    <TextView
+        android:id="@+id/nombreBebida2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/fotoBebida2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Bebida"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/precioUnit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nombreBebida2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="$ 3500 COP"
+        android:textAlignment="center"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+</android.support.constraint.ConstraintLayout>
