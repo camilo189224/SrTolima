@@ -5,4 +5,11 @@
     <string name="op2">PERFIL</string>
     <string name="op3">IDIOMA</string>
     <string name="op4">SALIR</string>
+
+    <string name="iniciarSesion">Iniciar Sesion</string>
+    <string name="registrarse">Registrarse</string>
+
+    <string name="btn_iniciarSesion">Iniciar Sesion</string>
+    <string name="btn_registrarse">Registrarse</string>
+
 </resources>

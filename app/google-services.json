@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "933814724718",
+    "project_id": "sr-tolima",
+    "storage_bucket": "sr-tolima.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933814724718:android:b85a87a7a6057daf0e9e7f",
+        "android_client_info": {
+          "package_name": "com.example.srtolima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933814724718-ji7mjsh2qufvejn4aqjkeetplsd7padg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmsC_BP85SBERgx_Ebyor8KiSnDi_pFTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933814724718-ji7mjsh2qufvejn4aqjkeetplsd7padg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
