@@ -8,42 +8,90 @@
 
     <LinearLayout
         android:layout_width="354dp"
-        android:layout_height="639dp"
+        android:layout_height="439dp"
         android:gravity="center_horizontal|center_vertical"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CORREO ELECTRONICO"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"/>
+
         <EditText
             android:id="@+id/correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Email" />
+            android:hint="Escriba su Correo"
+            android:inputType="text" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTRASEÑA"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"/>
 
         <EditText
-            android:id="@+id/contrasena"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Escriba su Contraseña"
             android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NUEVAMENTE SU CONTRASEÑA"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"/>
+
         <EditText
-            android:id="@+id/contrasenaConfirmacion"
+            android:id="@+id/contrasenaConf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Nuevamente contraseña"
             android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="239dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <Button
-            android:id="@+id/btn_Registrarse"
-            android:layout_width="match_parent"
+            android:id="@+id/btn_registro"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:text="@string/btn_registrarse" />
+            android:background="@color/blue"
+            android:text="@string/btn_registrarse"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_atrasreg"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:text="@string/btn_atrasreg"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
