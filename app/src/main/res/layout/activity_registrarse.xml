@@ -4,46 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Registrarse">
+    tools:context=".Registrarse">
 
     <LinearLayout
         android:layout_width="354dp"
-        android:layout_height="639dp"
-        android:gravity="center_horizontal|center_vertical"
+        android:layout_height="239dp"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintVertical_bias="0.05">
 
         <EditText
             android:id="@+id/correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text"
-            android:text="Email" />
+            android:gravity="center"
+            android:hint="CORREO"
+            android:inputType="text" />
 
 
         <EditText
-            android:id="@+id/contrasena"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:gravity="center"
+            android:hint="CONTRASEÑA"
             android:inputType="textPassword" />
+
         <EditText
-            android:id="@+id/contrasenaConfirmacion"
+            android:id="@+id/contrasenaConf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:gravity="center"
+            android:hint="NUEVAMENTE CONTRASEÑA"
             android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="180dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintVertical_bias="1.8">
 
         <Button
-            android:id="@+id/btn_Registrarse"
-            android:layout_width="match_parent"
+            android:id="@+id/btn_registro"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:text="@string/btn_registrarse" />
+            android:background="@color/blue"
+            android:text="@string/btn_registrarse"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_atrasreg"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:text="@string/btn_atrasreg"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
