@@ -38,6 +38,12 @@ public class Registrarse extends AppCompatActivity {
                 }
             }
         });
+        btn_backreg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+            });
     }
 
     private void registerUser(String emailUser, String passwordUser, String repasswordUser) {

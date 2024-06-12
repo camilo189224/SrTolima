@@ -11,7 +11,7 @@ public class IniciarSesion extends AppCompatActivity {
 
     //ATRIBUTOS
     EditText correo1, contrasena1;
-    Button btn_IniciarSesion1, btn_cerrarSesion1;
+    Button btn_IniciarSesion1, btn_atras1;
 
 
     @Override
@@ -23,7 +23,7 @@ public class IniciarSesion extends AppCompatActivity {
         correo1 = findViewById(R.id.correoIniciar);
         contrasena1 = findViewById(R.id.contrasenaIniciar);
         btn_IniciarSesion1 = findViewById(R.id.btn_IniciarSesion);
-        btn_cerrarSesion1 = findViewById(R.id.btn_atrasini);
+        btn_atras1 = findViewById(R.id.btn_atrasini);
 
         //evento click
         btn_IniciarSesion1.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +40,12 @@ public class IniciarSesion extends AppCompatActivity {
                 }
             }
         });
+        btn_atras1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+            });
     }
     private void iniciarSesion(String correoUser, String contrasenaUser) {
 
