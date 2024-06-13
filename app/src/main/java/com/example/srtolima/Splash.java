@@ -6,12 +6,15 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class Splash extends AppCompatActivity {
 
     //Atributos
+    ImageButton btnlogin;
     //MediaPlayer cancion;
 
     //Metodos
@@ -40,6 +43,9 @@ public class Splash extends AppCompatActivity {
         };
         Timer tiempo = new Timer();
         tiempo.schedule(inicioapp,10000);*/
+
+        btnlogin = findViewById(R.id.login);
+
     }
 
     public void irIniciar(View view){

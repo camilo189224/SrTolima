@@ -8,6 +8,35 @@
     tools:context=".Splash">
 
     <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".01"
+        app:layout_constraintHorizontal_bias="0.96"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login"
+                android:onClick="irLogin"
+                android:text="@string/iniciarSesion" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="409dp"
         android:layout_height="50dp"
         android:orientation="vertical"
