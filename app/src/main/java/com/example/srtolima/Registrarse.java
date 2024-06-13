@@ -43,7 +43,7 @@ public class Registrarse extends AppCompatActivity {
             public void onClick(View view) {
                 finish();
             }
-            });
+        });
     }
 
     private void registerUser(String emailUser, String passwordUser, String repasswordUser) {

@@ -47,13 +47,17 @@ public class Splash extends AppCompatActivity {
         btnlogin = findViewById(R.id.login);
 
     }
+    public void irLogin(View view){
+        Intent i = new Intent(this, Login.class);
+        startActivity(i);
+    }
 
-    public void irIniciar(View view){
+    /**public void irIniciar(View view){
         Intent i = new Intent(this, IniciarSesion.class);
         startActivity(i);
     }
     public void irRegistrar(View view){
         Intent i = new Intent(this, Registrarse.class);
         startActivity(i);
-    }
+    }**/
 }
