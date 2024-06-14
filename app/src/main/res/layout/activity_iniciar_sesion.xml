@@ -4,18 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/logologin2"
     tools:context=".IniciarSesion">
 
     <LinearLayout
         android:layout_width="354dp"
-        android:layout_height="439dp"
+        android:layout_height="80dp"
         android:gravity="center"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".029"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_IniciarSesion"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:layout_margin="10dp"
+                android:text="@string/btn_iniciarSesion"
+                android:onClick="iniciarSesion"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_atrasini"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:layout_margin="10dp"
+                android:text="@string/btn_atrasini"
+                android:onClick="atras"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="239dp"
+        android:layout_marginBottom="56dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.491">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="INGRESAR"
+            android:textSize="50dp"
+            android:textColor="#E9031057"
+            android:textStyle="normal"
+            android:layout_marginBottom="1dp"
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -23,12 +76,13 @@
             android:text="CORREO ELECTRONICO"
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:textSize="20dp"/>
+            android:textSize="16dp"/>
         <EditText
             android:id="@+id/correoIniciar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:ems="10"
+            android:background="@color/registro"
             android:inputType="text"
             android:hint="Escribe Email" />
 
@@ -38,44 +92,17 @@
             android:text="CONTRASEÑA"
             android:gravity="center"
             android:layout_marginTop="10dp"
-            android:textSize="20dp"/>
+            android:textSize="16dp"/>
 
 
         <EditText
             android:id="@+id/contrasenaIniciar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:ems="10"
+            android:background="@color/registro"
             android:hint="Escribe Password"
             android:inputType="textPassword" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="354dp"
-        android:layout_height="239dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <Button
-            android:id="@+id/btn_IniciarSesion"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:background="@color/blue"
-            android:text="@string/btn_iniciarSesion"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btn_atrasini"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:background="@color/red"
-            android:text="@string/btn_atrasini"
-            android:textColor="#FFFFFF" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
